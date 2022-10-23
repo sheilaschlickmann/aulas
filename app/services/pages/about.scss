@@ -1,0 +1,15 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  
+    p:first-of-type {
+      font-size: 3vw;
+      text-align: center;
+      padding-bottom: 24px;
+    }
+  
+    p {
+      font-size: 2vw;
+    }
+  }

@@ -1,0 +1,16 @@
+{
+  "name": "@sheila/pacote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "source": "index.js",
+  "module": "dist/module.js",
+  "scripts": {
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}

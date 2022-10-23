@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../assets/reset.css">
+        <style>
+            h1 {
+                font-size: 32px;
+            }
+
+            #nomeElemento {
+                color: red;
+            }
+
+            .custom {
+                background-color: blue;
+            }
+
+            [href] {
+                color: green;
+            }
+
+            .caixa1 {
+                height: 20px;
+                width: 20px;
+                position: relative;
+                border-left: 10px solid pink;
+                border-right: 10px solid pink;
+                border-top: 10px solid purple;
+                border-bottom: 10px solid purple;
+            } 
+
+            .caixa2 {
+                height: 20px;
+                width: 20px;
+                position: relative;
+                border-left: 10px solid purple;
+                border-right: 10px solid purple;
+                border-top: 10px solid pink;
+                border-bottom: 10px solid pink;
+                
+            } 
+              
+
+        </style>
+    </head>
+
+    <body>
+        <!--<h1 id="nomeElemento" class="custom">Hello World!</h1>
+        <h1 id="nomeElemento2" class="custom">Hello World 2!</h1>
+        <a href="./pagina-1.html">Página 1</a>-->
+
+        <div id="caixa1" class="caixa1"></div>
+        <div id="caixa2" class="caixa2"></div>
+        <button id="bt_mover" >Posicionar</button>
+    </body>
+    <script type="module">
+
+        import { posicionar } from "./index.js";
+        var mover = document.getElementById('bt_mover');
+        mover.addEventListener('click', posicionar);
+
+        //alert("olá!");
+        console.log(window);
+        console.log(document.getElementById('nomeElemento'));
+        console.log(document.querySelectorAll('.custom'));
+        var nome = "teste";
+        console.log(nome);
+        nome = 123;
+
+
+       
+    </script>
+</html>

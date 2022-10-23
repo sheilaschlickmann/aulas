@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Weliton - Aula final</title>
+  <link rel="icon" href="./assets/images/logo.jpg">
+  <link rel="stylesheet" href="./index.scss">
+</head>
+<body>
+  <div
+    id="container"
+    class="container-default"
+  >
+    <header>
+      <button
+        class="menu-change button-image-cover"
+        onclick="menuToggle()"
+        title="Show/hide the menu"
+      ></button>
+
+      <img src="assets/images/user.svg" alt="user">
+
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry
+      </p>
+    </header>
+
+    <menu>
+      <li class="home-icon">
+        <button onclick="onNavClick('/');" class="button-image-cover"></button>
+      </li>
+
+      <li>
+        <a onclick="onNavClick('/about');">About</a>
+      </li>
+
+      <li>
+        <a onclick="onNavClick('/contact');">Contact</a>
+      </li>
+    </menu>
+
+    <main id="root"></main>
+
+    <footer>
+      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout
+    </footer>
+  </div>
+</body>
+
+<script type="module">
+  import { main } from './index.js';
+  main();
+</script>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./index.scss">
+    </head>
+    <body>
+        <div class="container py-4 px-3 mx-auto">
+            <h1>Meu Script Importado</h1>
+            <button class="btn btn-primary">Primary button</button>
+        </div>
+    </body>
+    <script type="module">
+        import { mylog } from '@sheila/pacotelog';
+        mylog('Hi');        
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(async (response) => {
+                let v1 = await response.json();
+
+                document.querySelectorAll();
+            });
+    </script>
+</html>

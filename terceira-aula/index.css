@@ -1,0 +1,41 @@
+.cabecalho { 
+    height: 10%;
+}
+
+.menu { 
+    height: 90%;
+    width: 30%;
+    padding: 2%;
+    background: red;
+}
+
+.corpo {
+    top: 10%;
+    left: 34%;
+    background: pink;
+    position: absolute;
+    font-size: 2rem;
+}
+
+.titulo {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.item {
+    border: 2px solid;
+    background: silver;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.botao-cabecalho {
+    background-image: url("../assets/Menu_icon.png");
+    background-repeat: round;
+    width: 40px;
+    height: 40px;
+}
+
+.imagem-cabecalho {
+    height: 60px;
+}

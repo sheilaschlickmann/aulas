@@ -1,0 +1,142 @@
+@import "assets/reset";
+@import "pages/home";
+@import "pages/about";
+@import "pages/contact";
+
+.container-default {
+  display: grid;
+  grid-template-areas: "header header" "menu main" "footer footer";
+  grid-template-rows: 60px auto 40px;
+  grid-template-columns: 200px auto;
+  height: 100%;
+}
+
+.container-toggle {
+  display: grid;
+  grid-template-areas: "header header" "main main" "footer footer";
+  grid-template-rows: 60px auto 40px;
+  grid-template-columns: auto;
+  height: 100%;
+
+  menu {
+    display: none !important;
+  }
+}
+
+@media (max-height: 500px), (max-width: 600px) {
+  .container-default {
+    grid-template-areas: "header header" "menu main";
+    grid-template-rows: 60px auto;
+  }
+
+  .container-toggle {
+    grid-template-areas: "header header" "main main";
+    grid-template-rows: 60px auto;
+  }
+
+  footer {
+    display: none !important;
+  }
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 6px 0;
+  background: #199719;
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .menu-change {
+    height: 28px;
+    width: 28px;
+    background-image: url("assets/images/menu.svg");
+  }
+}
+
+menu {
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 6px;
+  background: #2ea92e;
+  overflow-y: auto;
+  list-style-type: none;
+
+  li.home-icon {
+    display: flex;
+    justify-content: center;
+
+    button {
+      height: 40px;
+      width: 40px;
+      background-image: url("assets/images/home-alt.svg");
+    }
+  }
+
+  li:not(.home-icon) {
+    background: #31c331;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+  }
+}
+
+.button-image-cover {
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  padding: 6px;
+  background: #f5f5f5;
+  font-size: 1.2rem;
+  overflow-y: auto;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 6px 0;
+  background: #2ea92e;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.6s;
+}
+
+a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,0 +1,1 @@
+{"mappings":"AAAO,SAAS,yCAAK,CAAC,OAAO,GAAG,EAAE,EAAE;IAChC,OAAO,CAAC,GAAG,CAAC,CAAC,iBAAiB,EAAE,OAAO,CAAC,CAAC,CAAC,CAAC;CAC9C","sources":["index.js"],"sourcesContent":["export function mylog(message = '') {\r\n    console.log(` Sua mensagem é: ${message}`);\r\n}"],"names":[],"version":3,"file":"module.js.map"}

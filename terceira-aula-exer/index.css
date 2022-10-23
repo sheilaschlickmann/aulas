@@ -1,0 +1,84 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'conteudo proventos descontos'
+    'footer footer footer';
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 60% 20% 20%;
+    width: 100%;
+    height: 100%;
+}
+
+.container-footer {
+    display: grid;
+    grid-template-areas: 
+    'footer-total footer-proventos footer-descontos';
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 60% 20% 20%;
+    background-color: pink;
+}
+.header { 
+    display: grid;
+    grid-area: header;
+    background-color: burlywood
+}
+
+.conteudo {
+    background: pink;
+    display: grid;
+    grid-area: conteudo;
+    background-color: brown
+}
+
+.titulo {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.botao-cabecalho {
+    background-image: url("../assets/Menu_icon.png");
+    background-repeat: round;
+}
+
+.imagem-cabecalho {
+    height: 60px;
+}
+
+.footer {
+    display: grid;
+    grid-area: footer;
+    background-color: blueviolet
+}
+
+.proventos {
+    display: grid;
+    grid-area: proventos;
+    background-color: blue
+
+}
+
+.descontos {
+    display: grid;
+    grid-area: descontos;
+    background-color: aqua;
+}
+
+.total-liquido {
+    display: grid;
+    grid-area: footer-total;
+    background-color: black;
+}
+
+.total-proventos {
+    display: grid;
+    grid-area: footer-proventos;
+    background-color:gray;
+}
+
+@media screen and (max-width: 600px){
+   .container  {
+    --largura: 0 100%
+   }
+    
+}

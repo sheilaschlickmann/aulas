@@ -1,0 +1,1 @@
+{"mappings":";;;;;AAAO,SAAS,yCAAG,CAAC,OAAO,GAAG,EAAE,EAAE;IAClC,OAAO,CAAC,GAAG,CAAC,CAAC,cAAc,EAAE,OAAO,CAAC,CAAC,CAAC;CACtC","sources":["index.js"],"sourcesContent":["export function log(message = '') {\r\nconsole.log(`Sua empresa é ${message}`)\r\n}\r\n\r\n"],"names":[],"version":3,"file":"index.js.map"}

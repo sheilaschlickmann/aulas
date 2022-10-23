@@ -1,0 +1,19 @@
+{
+  "name": "quinta-aula",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "build": "parcel build"
+  },
+  "author": "sheila",
+  "license": "ISC",
+  "dependencies": {
+    "@sheila/pacotelog": "^1.0.0",
+    "bootstrap": "^5.2.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  }
+}
